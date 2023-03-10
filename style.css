@@ -1,0 +1,86 @@
+.circle{
+    
+    height: 50px;
+    width: 50px;
+    background-color: aliceblue;
+    box-shadow: inset 1px 1px 10px 1px #939191;
+    border-radius: 50%;
+}
+
+/*Ciruclos*/
+.circle-red{
+    background-color: #E74C3C;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.circle-blue{
+    background-color: #3498DB;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.circle-yellow{
+    background-color: #F1C40F;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.circle-orange{
+    background-color: #E67E22;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.container-fichas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"]:checked + label{
+    border: 2px solid white;
+    box-shadow: 0 0 5px 1px #ffffffc2;
+}
+
+
+/*-----------*/
+.container-circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+table{
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 700px;
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.btn-estadisticas{
+    
+}
+
+.footer-card{
+    display: none;
+}
+
+.header-card{
+    display: none;
+}
+
+table, td, tr{
+    width: auto;
+    height: auto;
+    border: none;
+}
