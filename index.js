@@ -8,8 +8,6 @@ let tablero=[
 ]
 
 
-
-
 const checkWinner=(numPlayer)=>{
 
     for(let i=0; i<tablero.length;i++){
@@ -19,7 +17,6 @@ const checkWinner=(numPlayer)=>{
             cont==4 ? console.log("Gana en linea") : false;
         });
     }
-
 
 
     for(let i=0; i<tablero[0].length;i++){
@@ -43,7 +40,7 @@ const checkWinner=(numPlayer)=>{
         });
     }
 
-    for(let i= tablero[0].length -1 ;i>0;i--){
+    for(let i= tablero[0].length -1 ;i>=0;i--){
         let b=i;
         let cont=0;
 
@@ -54,6 +51,8 @@ const checkWinner=(numPlayer)=>{
 
             b--
         })
+
+        console.log(cont)
     }
 
     
