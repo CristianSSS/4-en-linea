@@ -1,5 +1,15 @@
+
+
 const tabla=document.getElementById("tablero");
 
+
+tablero.forEach((fila,i)=>{
+  fila.forEach((element,index)=>{
+    if(element==1){
+      tablaHtml[i][index].setAttribute("class","circle-red");
+    }
+  })
+})
 tabla.addEventListener("click",(e)=>{
   
     let element=e.target.closest("#tablero td");
