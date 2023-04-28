@@ -1,7 +1,4 @@
-
-
 const tabla=document.getElementById("tablero");
-
 
 tablero.forEach((fila,i)=>{
   fila.forEach((element,index)=>{
@@ -9,7 +6,7 @@ tablero.forEach((fila,i)=>{
       tablaHtml[i][index].setAttribute("class","circle-red");
     }
   })
-})
+});
 tabla.addEventListener("click",(e)=>{
   
     let element=e.target.closest("#tablero td");
@@ -17,7 +14,6 @@ tabla.addEventListener("click",(e)=>{
     let columna= element.cellIndex;
     
   
-
     for(let i=tablero.length-1; i>=0;i--){
       
       
@@ -26,15 +22,17 @@ tabla.addEventListener("click",(e)=>{
       
         tablaHtml[i][columna].setAttribute("class","circle-red");
         tablero[i][columna]=1;
+
+        checkWinner(1, i, columna);
+
         break;
 
       }
 
-
-
     }
-    checkWinner(1);
-  console.log(tablero);
+    
+    
+ 
 
 });
 

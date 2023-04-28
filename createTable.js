@@ -19,7 +19,7 @@ const createTable=()=>{
 
             array.push(div);
         }
-        tablaHtml.push(array)
+        tablaHtml.push(array);
         fragment.appendChild(tr);
 
     }
